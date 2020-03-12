@@ -1,6 +1,7 @@
 <types namespace="_hotReload">
-  <method name="hotReload" async return="string">
-    <arg type="!_hotReload.Config" name="config">The config.</arg>
-    Dummy Code For Hot-Reload Compilation.
+  <method name="hotReload">
+    <arg type="function()" name="callback">The callback.</arg>
+    The re-rendering function to execute after an update to
+    any of the files is made.
   </method>
 </types>

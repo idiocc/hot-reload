@@ -1,7 +1,7 @@
 {
   "_hotReload.hotReload": {
-    "link": "https://github.com/hot-reloadjs/package#async-mynewpackageconfig-config-string",
-    "description": "Dummy Code For Hot-Reload Compilation."
+    "link": "https://github.com/idiocc/hot-reload#hotreloadcallback-function-void",
+    "description": "The re-rendering function to execute after an update to\nany of the files is made."
   },
   "_hotReload.Config": {
     "link": "https://github.com/hot-reloadjs/package#type-config",

@@ -1,19 +1,12 @@
-import { c } from 'erte'
+/*
+ * This file should only be used for compilation with Depack. The
+ * `@idio/frontend` middleware is supposed to override `@idio/hot-reload`
+ * import into `/hot-reload` path automatically, without the need for
+ * the code from this package.
+ */
 
 /**
- * @type {_hotReload.hotReload}
+ * Registers hot-reload callback to rerender apps.
+ * @param {!Function} cb
  */
-export default async function hotReload(config = {}) {
-  const {
-    shouldRun = true,
-    text = '',
-  } = config
-  if (!shouldRun) return ''
-  console.log('@idio/hot-reload called with %s', c(text, 'yellow'))
-  return text
-}
-
-/**
- * @suppress {nonStandardJsDocs}
- * @typedef {import('../types').hotReload} _hotReload.hotReload
- */
+export default function addHotReload(cb) {}
