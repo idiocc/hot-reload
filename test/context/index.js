@@ -2,7 +2,7 @@ import { join } from 'path'
 import { debuglog } from 'util'
 import { readFileSync } from 'fs'
 
-const LOG = debuglog('my-new-package')
+const LOG = debuglog('@idio/hot-reload')
 
 /**
  * A testing context for the package.
@@ -41,21 +41,8 @@ export default class Context {
   async _destroy() {
     LOG('destroy context')
   }
-  static get BIN() {
-    return BIN
-  }
 }
 
-/* bin-start */
-let BIN = 'src/BIN'
-if (process.env.ALAMODE_ENV == 'test-build') {
-  console.log('Testing build bin...')
-  BIN = 'build/bin/mnp'
-} else if (process.env.ALAMODE_ENV == 'test-compile') {
-  console.log('Testing compile bin...')
-  BIN = 'compile/bin/mnp'
-}
-/* bin-end */
 
 /** @typedef {Object<string, Test & TestSuite4>} TestSuite */
 /** @typedef {Object<string, Test & TestSuite3>} TestSuite4 */

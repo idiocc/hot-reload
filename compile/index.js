@@ -1,22 +1,22 @@
-const { _myNewPackage } = require('./mnp')
+const { _hotReload } = require('./hot-reload')
 
 /**
- * {{ description }}
- * @param {!_myNewPackage.Config} config Options for the program.
+ * Dummy Code For Hot-Reload Compilation.
+ * @param {!_hotReload.Config} config Options for the program.
  * @param {boolean} [config.shouldRun=true] A boolean option. Default `true`.
  * @param {string} [config.text] A text to return.
  * @return {Promise<string>}
  */
-function myNewPackage(config) {
-  return _myNewPackage(config)
+function hotReload(config) {
+  return _hotReload(config)
 }
 
-module.exports = myNewPackage
+module.exports = hotReload
 
 /* typal types/index.xml namespace */
 /**
- * @typedef {_myNewPackage.Config} Config `＠record` Options for the program.
- * @typedef {Object} _myNewPackage.Config `＠record` Options for the program.
+ * @typedef {_hotReload.Config} Config `＠record` Options for the program.
+ * @typedef {Object} _hotReload.Config `＠record` Options for the program.
  * @prop {boolean} [shouldRun=true] A boolean option. Default `true`.
  * @prop {string} [text] A text to return.
  */

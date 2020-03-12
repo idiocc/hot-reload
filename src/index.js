@@ -1,19 +1,19 @@
 import { c } from 'erte'
 
 /**
- * @type {_myNewPackage.myNewPackage}
+ * @type {_hotReload.hotReload}
  */
-export default async function myNewPackage(config = {}) {
+export default async function hotReload(config = {}) {
   const {
     shouldRun = true,
     text = '',
   } = config
   if (!shouldRun) return ''
-  console.log('my-new-package called with %s', c(text, 'yellow'))
+  console.log('@idio/hot-reload called with %s', c(text, 'yellow'))
   return text
 }
 
 /**
  * @suppress {nonStandardJsDocs}
- * @typedef {import('../types').myNewPackage} _myNewPackage.myNewPackage
+ * @typedef {import('../types').hotReload} _hotReload.hotReload
  */

@@ -1,11 +1,11 @@
-# my-new-package
+# @idio/hot-reload
 
-%NPM: my-new-package%
+%NPM: @idio/hot-reload%
 
-`my-new-package` is {{ description }}
+`@idio/hot-reload` is Dummy Code For Hot-Reload Compilation.
 
 ```sh
-yarn add my-new-package
+yarn add @idio/hot-reload
 ```
 
 ## Table Of Contents

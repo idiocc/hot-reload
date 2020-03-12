@@ -1,7 +1,7 @@
-import myNewPackage from '../src'
+import hotReload from '../src'
 
 (async () => {
-  const res = await myNewPackage({
+  const res = await hotReload({
     text: 'example',
   })
   console.log(res)
